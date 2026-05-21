@@ -1,0 +1,117 @@
+.app {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.intro {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: #0f766e;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  max-width: 640px;
+  margin: 0 0 12px;
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+.intro p:last-child {
+  max-width: 560px;
+  color: #4b5563;
+}
+
+.duel-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.playlist-card {
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+  border: 2px solid #668ede;
+  border-radius: 8px;
+  background: #b05959;
+  text-align: left;
+}
+
+.leader-card {
+  border-color: #14b8a6;
+  box-shadow: 0 12px 28px rgba(20, 184, 166, 0.16);
+}
+
+.playlist-emoji {
+  font-size: 42px;
+}
+
+.playlist-card h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.playlist-card p {
+  color: #4b5563;
+}
+
+.playlist-card strong {
+  color: #111827;
+  font-size: 22px;
+}
+
+.playlist-card button {
+  width: fit-content;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  color: rgb(151, 113, 113);
+  background: #111827;
+  font: inherit;
+  cursor: pointer;
+}
+
+.playlist-card button:hover {
+  background: #760f68;
+}
+
+.leader-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fafbf9;
+  text-align: left;
+}
+
+.leader-box p {
+  margin-bottom: 6px;
+  color: #4b5563;
+}
+
+.leader-box h2 {
+  margin: 0;
+  color: #111827;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 32px 16px;
+  }
+
+  .intro h1 {
+    font-size: 34px;
+  }
+
+  .duel-board {
+    grid-template-columns: 1fr;
+  }
+}

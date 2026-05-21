@@ -1,0 +1,130 @@
+.app {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.intro {
+  margin-bottom: 28px;
+}
+
+.eyebrow,
+.genre,
+.leader-panel span {
+  color: #d04764;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  max-width: 650px;
+  margin: 0 auto 12px;
+  font-size: clamp(2rem, 7vw, 4.5rem);
+  line-height: 1;
+}
+
+.intro p:last-child {
+  max-width: 560px;
+  margin: 0 auto;
+  color: #526070;
+}
+
+.leader-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin: 0 auto 24px;
+  padding: 18px 20px;
+  border: 2px solid #161b22;
+  border-radius: 8px;
+  background: #f7efe3;
+  text-align: left;
+}
+
+.leader-panel strong {
+  color: #161b22;
+  font-size: 1.4rem;
+}
+
+.trailer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.trailer-card {
+  display: grid;
+  gap: 12px;
+  min-height: 390px;
+  padding: 22px;
+  border: 2px solid #d6dce5;
+  border-radius: 8px;
+  background: #ffffff;
+  text-align: left;
+}
+
+.leader-card {
+  border-color: #d04764;
+  box-shadow: 0 12px 30px rgba(208, 71, 100, 0.16);
+}
+
+.poster {
+  display: grid;
+  place-items: center;
+  min-height: 150px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #19212f, #d04764);
+  font-size: 4rem;
+}
+
+.trailer-card h2 {
+  margin: 0;
+  color: #161b22;
+  font-size: 1.8rem;
+}
+
+.trailer-card p {
+  margin: 0;
+  color: #526070;
+}
+
+.trailer-card strong {
+  align-self: end;
+  color: #161b22;
+  font-size: 1.2rem;
+}
+
+.trailer-card button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 6px;
+  background: #161b22;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.trailer-card button:hover {
+  background: #d04764;
+}
+
+@media (max-width: 720px) {
+  .app {
+    padding: 28px 0;
+  }
+
+  .leader-panel,
+  .trailer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

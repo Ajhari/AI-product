@@ -1,0 +1,78 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f4f7fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.board {
+  width: min(100%, 460px);
+  padding: 24px;
+  border: 1px solid #d7dee8;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #3563a9;
+  font-weight: 700;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.intro {
+  color: #526070;
+}
+
+.choice-group {
+  margin-top: 20px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 1px solid #7b8794;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #172033;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e8f0fe;
+}
+
+.summary {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #eef6ff;
+}
+
+.summary p {
+  margin-bottom: 8px;
+}
