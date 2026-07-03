@@ -1,0 +1,169 @@
+.app {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+header {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+header p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.recipe-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  padding: 16px;
+  border: 1px solid #ded7cd;
+  border-radius: 8px;
+  background: #fffaf2;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: #3f3a32;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+input,
+select,
+button {
+  min-height: 42px;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #cfc7bc;
+  padding: 0 10px;
+  background: white;
+  color: #222;
+}
+
+button {
+  border: 0;
+  padding: 0 14px;
+  background: #126a5b;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d4f44;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.summary div {
+  display: grid;
+  gap: 4px;
+  padding: 16px;
+  border: 1px solid #d9e0d4;
+  border-radius: 8px;
+  background: #f4faf1;
+  text-align: left;
+}
+
+.summary span {
+  color: #61705b;
+  font-size: 14px;
+}
+
+.summary strong {
+  color: #1f2b1c;
+  font-size: 28px;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.recipe-section {
+  border: 1px solid #ddd8cf;
+  border-radius: 8px;
+  background: white;
+  text-align: left;
+}
+
+.recipe-section h2 {
+  margin: 0;
+  padding: 14px 16px;
+  border-bottom: 1px solid #ebe6dd;
+}
+
+.recipe-section ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 14px;
+  list-style: none;
+}
+
+.recipe-section li {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  background: #faf8f4;
+}
+
+.recipe-section small {
+  color: #6b7280;
+}
+
+.recipe-section button {
+  min-height: 34px;
+  background: #8a2f20;
+  font-size: 14px;
+}
+
+.recipe-section .favorite {
+  background: #b45309;
+}
+
+.recipe-section .favorite.active {
+  background: #126a5b;
+}
+
+.empty {
+  padding: 16px;
+  color: #6b7280;
+}
+
+.reset-button {
+  margin-top: 18px;
+  background: #374151;
+}
+
+@media (max-width: 800px) {
+  .recipe-form,
+  .summary,
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
